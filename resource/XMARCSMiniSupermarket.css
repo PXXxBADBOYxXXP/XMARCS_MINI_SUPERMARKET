@@ -1,0 +1,58 @@
+.menubar{
+    -fx-background-color: transparent
+    -fxopacy 0.5 ;
+    -fx-border-width: 2.0;
+}
+
+.button11{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #F20732;
+    -fx-background-color: #05AFF2;
+}
+
+.menu-bar{
+    -fx-background-color: #5D9E3B;  
+    -fx-opacity: 0.7;
+    -fx-border-width: 2.0;
+}
+.button1 {
+    -fx-background-color: transparent;
+}
+ 
+.buntton2 {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;  
+}
+ 
+.button3:hover {
+    -fx-background-color: #5D9E3B;
+    -fx-font-size: 22px;
+    -fx-effect: dropshadow(three-pass-box, black, 20,0,0,0);
+}
+ 
+.button4:hover {
+    -fx-font-size: 22px;
+}
+ 
+.table-view .column-header,
+.table-view .column-header-background.filler{
+    -fx-cell-size: 20;
+    -fx-background-color: #5D9E3B;    
+}
+ 
+.table-row-cell:selected {
+    -fx-background-color:#F2B01E;
+}
+ 
+.table-view.column-header,
+.table-view.column-background.filler{
+    -fx-cell-size: 20;
+    -fx-background-color: #0476D9;
+}
+ 
+.table-row-cell:selected{
+     -fx-background-color: #0476D9;
+}

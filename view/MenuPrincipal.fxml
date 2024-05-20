@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.marcobolaños.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="174.0" fitWidth="217.0" layoutX="732.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LOGO%20SUPER.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="839.0" fitWidth="1415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FONDO%20MENU%20PRINCIPAL.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-2.0" layoutY="-4.0" prefHeight="31.0" prefWidth="353.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="MODULOS">
+            <items>
+              <MenuItem fx:id="btnMenuClientes" mnemonicParsing="false" onAction="#handleButtonAction" text="CLIENTES" />
+                  <MenuItem fx:id="btnMenuProveedores" mnemonicParsing="false" onAction="#handleButtonAction" text="PROVEEDORES" />
+                  <MenuItem fx:id="btnMenuTipoProducto" mnemonicParsing="false" onAction="#handleButtonAction" text="TIPOPRODUCTO" />
+                  <MenuItem fx:id="btnMenuCargoEmpleado" mnemonicParsing="false" onAction="#handleButtonAction" text="CARGOEMPLEADO" />
+                  <MenuItem fx:id="btnMenuCompras" mnemonicParsing="false" onAction="#handleButtonAction" text="COMPRAS" />
+                  <MenuItem fx:id="btnMenuProductos" mnemonicParsing="false" onAction="#handleButtonAction" text="PRODUCTOS" />
+                  <MenuItem fx:id="btnMenuDetalleCompra" mnemonicParsing="false" onAction="#handleButtonAction" text="DETALLECOMPRA" />
+                  <MenuItem fx:id="btnMenuEmpleados" mnemonicParsing="false" onAction="#handleButtonAction" text="EMPLEADOS" />
+                  <MenuItem fx:id="btnMenuFactura" mnemonicParsing="false" onAction="#handleButtonAction" text="FACTURA" />
+                  <MenuItem fx:id="btnMenuDetalleFactura" mnemonicParsing="false" onAction="#handleButtonAction" text="DETALLEFACTURA" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ICONO%20MODULOS.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="REPORTES">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ICONO%20REPORTES.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="ACERCA DE ">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ICONO%20ACERCA%20DE.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <items>
+                  <MenuItem fx:id="btnMenuProgramador" mnemonicParsing="false" onAction="#handleButtonAction" text="Programador" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="234.0" fitWidth="228.0" layoutX="1187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LOGO%20SUPER.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="251.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LOGO%20XMARCSX.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

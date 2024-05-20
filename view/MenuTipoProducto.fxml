@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.marcobolaños.controller.MenuTipoProductoController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuTipoProducto.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblTipoProducto" layoutX="180.0" layoutY="178.0" prefHeight="446.0" prefWidth="1001.0" style="-fx-background-color: #F25C05;">
+        <columns>
+          <TableColumn fx:id="colCodigoT" prefWidth="500.0" text="codigoTipoProducto" />
+          <TableColumn fx:id="colDescripcionT" prefWidth="500.0" text="descripcion" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="382.0" layoutY="90.0" prefHeight="82.0" prefWidth="521.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="codigoTipoProducto" />
+            <Label text="descripcion" GridPane.rowIndex="1" />
+            <TextField fx:id="txtCodicoT" GridPane.columnIndex="1" />
+            <TextField fx:id="txtDescripcionT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutY="216.0" prefHeight="343.0" prefWidth="171.0">
+        <columnConstraints>
+          <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="64.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnAgregar" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Agregar" prefHeight="104.0" prefWidth="188.0" style="-fx-background-color: #F2B705;" text="Agregar" GridPane.columnIndex="1" />
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="136.0" prefWidth="189.0" style="-fx-background-color: #F2B705;" text="Eliminar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="100.0" prefWidth="171.0" style="-fx-background-color: #F2B705;" text="Editar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="118.0" prefWidth="198.0" style="-fx-background-color: #F2B705;" text="Reporte" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="imgAgregar" fitHeight="58.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../images/ICONOAGREGARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminar" fitHeight="95.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/ICONOELIMINARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditar" fitHeight="88.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/ICONOEDITARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="61.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/ICONO%20REPORTES.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="btnRegresarT" layoutX="99.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="61.0" style="-fx-background-color: #F20732;" />
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="106.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HOME.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

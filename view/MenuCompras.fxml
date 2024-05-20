@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.marcobolaños.controller.MenuComprasController">
+   <children>
+      <ImageView fitHeight="830.0" fitWidth="1415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuCOMPRAS.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="462.0" layoutY="95.0" prefHeight="83.0" prefWidth="352.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="numeroDocumento" />
+            <Label text="fechaDocumento" GridPane.rowIndex="1" />
+            <Label text="totalDocumento" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNumeroCO" GridPane.columnIndex="1" />
+            <TextField fx:id="txtTotalCO" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtDescripcionCO" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="descripcion" GridPane.rowIndex="2" />
+            <DatePicker fx:id="myDatePicker" onAction="#getDate" promptText="fechaDocumento" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblCompras" layoutX="171.0" layoutY="186.0" prefHeight="443.0" prefWidth="1002.0" style="-fx-background-color: #F25C05;">
+        <columns>
+          <TableColumn fx:id="colNumeroCO" prefWidth="125.0" text="numeroDocumento" />
+          <TableColumn fx:id="colFechaCO" prefWidth="125.0" text="fechaDocumento" />
+            <TableColumn fx:id="colDescripcionCO" prefWidth="100.0" text="descripcion" />
+            <TableColumn fx:id="colTotalCO" prefWidth="125.0" text="totalDocumento" />
+        </columns>
+      </TableView>
+      <GridPane layoutY="216.0" prefHeight="347.0" prefWidth="168.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#Agregar" prefHeight="106.0" prefWidth="214.0" style="-fx-background-color: #F2B705;" text="Agregar" />
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="149.0" prefWidth="215.0" style="-fx-background-color: #F2B705;" text="Eliminar" GridPane.rowIndex="1" />
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="141.0" prefWidth="196.0" style="-fx-background-color: #F2B705;" text="Editar" GridPane.rowIndex="2" />
+            <Button fx:id="btnReporte" mnemonicParsing="false" prefHeight="106.0" prefWidth="191.0" style="-fx-background-color: #F2B705;" text="Reporte" GridPane.rowIndex="3" />
+            <ImageView fitHeight="86.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ICONOAGREGARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/ICONOELIMINARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/ICONOEDITARC.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/ICONO%20REPORTES.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="btnRegresarCO" layoutX="77.0" layoutY="575.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="68.0" style="-fx-background-color: #F20732;" />
+      <ImageView fitHeight="40.0" fitWidth="49.0" layoutX="91.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HOME.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
